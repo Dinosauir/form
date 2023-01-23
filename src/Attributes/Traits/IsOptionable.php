@@ -12,9 +12,8 @@ trait IsOptionable
 
     final public function options(array $options): self
     {
-        //@todo: Sebi - validare
         if (count($options) < 1) {
-            $this->options = [];
+            $this->options = ['' => trans('form.select-loading-items')];
 
             return $this;
         }
