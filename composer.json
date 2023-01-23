@@ -23,7 +23,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Abacus\\Form\\GridServiceProvider"
+        "Abacus\\Form\\FormServiceProvider"
       ]
     }
   },
