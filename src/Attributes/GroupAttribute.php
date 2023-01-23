@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Abacus\Form\Attributes;
 
 use Abacus\Form\Attributes\Traits\IsTranslated;

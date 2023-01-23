@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Abacus\Form\Shared\Exceptions;
 
 use Abacus\Form\Shared\Exceptions\Traits\HasDomainMessage;

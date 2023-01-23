@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Abacus\Form\Form\Components;
 
 use Abacus\Form\Form\Collections\ComponentCollection;

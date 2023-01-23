@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Abacus\Form\Attributes\Traits;
 
 trait IsTranslated

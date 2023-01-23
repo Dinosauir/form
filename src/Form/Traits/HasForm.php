@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Abacus\Form\Form\Traits;
 
 use Illuminate\Database\Eloquent\Model;
