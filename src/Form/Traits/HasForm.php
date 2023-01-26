@@ -24,7 +24,7 @@ trait HasForm
             $translation = $translation->getAttributes();
 
             foreach ($translation as $attribute => $value) {
-                if ($this->checkAttribute($attribute)) {
+                if ($this->checkFormAttribute($attribute)) {
                     continue;
                 }
 
@@ -35,7 +35,7 @@ trait HasForm
         return $model;
     }
 
-    private function checkAttribute(string $attribute): bool
+    private function checkFormAttribute(string $attribute): bool
     {
         return in_array($attribute, ['id', 'locale', 'created_at', 'updated_at']) || str_ends_with($attribute, '_id');
     }
