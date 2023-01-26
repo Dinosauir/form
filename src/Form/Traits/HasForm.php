@@ -14,7 +14,7 @@ trait HasForm
         assert($this instanceof Model);
 
         $this->makeHidden(['created_at', 'updated_at', 'locale']);
-        $model = $this->toArray();
+        $model = $this;
 
         if (!(property_exists($this, 'translations'))) {
             return $model;
@@ -28,7 +28,7 @@ trait HasForm
                     continue;
                 }
 
-                $model['translations'][$attribute][$translation['locale']] = $value;
+                $model->translations[$attribute][$translation['locale']] = $value;
             }
         }
 
