@@ -10,7 +10,7 @@ trait IsOptionable
 {
     protected array $options;
 
-    final public function options(array $options): self
+    final public function options(array $options): static
     {
         if (count($options) < 1) {
             $this->options = ['' => trans('form.select-loading-items')];

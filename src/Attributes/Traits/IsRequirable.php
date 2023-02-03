@@ -8,7 +8,7 @@ trait IsRequirable
 {
     protected bool $required = false;
 
-    final public function required(): self
+    final public function required(): static
     {
         $this->required = true;
 

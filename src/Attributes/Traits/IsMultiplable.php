@@ -8,7 +8,7 @@ trait IsMultiplable
 {
     private bool $multiple = false;
 
-    final public function multiple(): self
+    final public function multiple(): static
     {
         $this->multiple = true;
 

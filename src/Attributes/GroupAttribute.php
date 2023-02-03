@@ -23,21 +23,21 @@ class GroupAttribute extends Attribute
         $this->attributes = $attributes ?? collect([]);
     }
 
-    final public function newValues(): self
+    final public function repeater(): static
     {
         $this->accepts_new_values = true;
 
         return $this;
     }
 
-    final public function many(): self
+    final public function many(): static
     {
         $this->is_many = true;
 
         return $this;
     }
 
-    final public function showable(): self
+    final public function showable(): static
     {
         $this->is_showable = true;
 
