@@ -15,6 +15,7 @@ class GroupAttribute extends Attribute
     protected bool $accepts_new_values;
     public Collection|null $attributes = null;
     protected bool $is_showable;
+    protected bool $is_collapsable;
 
     public function __construct($key, $attributes = null)
     {
@@ -40,6 +41,13 @@ class GroupAttribute extends Attribute
     final public function showable(): static
     {
         $this->is_showable = true;
+
+        return $this;
+    }
+
+    final public function collapsable(): static
+    {
+        $this->is_collapsable = true;
 
         return $this;
     }
