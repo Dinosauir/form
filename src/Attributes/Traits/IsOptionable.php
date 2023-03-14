@@ -13,7 +13,7 @@ trait IsOptionable
     final public function options(array $options): static
     {
         if (count($options) < 1) {
-            $this->options = ['' => trans('form.select-loading-items')];
+            $this->options = [new Option('', trans('form.select-loading-items'))];
 
             return $this;
         }

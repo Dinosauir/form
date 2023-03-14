@@ -6,7 +6,7 @@ class DependsWhen
 {
     public function __construct(
         private string $parent_key,
-        private string $parent_value
+        private string|int|bool|float $parent_value
     )
     {
     }

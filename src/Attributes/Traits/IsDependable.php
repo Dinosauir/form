@@ -10,7 +10,7 @@ trait IsDependable
 {
     private ?DependsWhen $dependsWhen = null;
 
-    public function dependsWhen(string $parent_key, string $parent_value): static
+    public function dependsWhen(string $parent_key, string|int|bool|float $parent_value): static
     {
         $this->dependsWhen = new DependsWhen($parent_key, $parent_value);
 
